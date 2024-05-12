@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import{  useState } from "react";
 import { Todo, useTodos } from "../context/todoContext";
 
 const ListTodos = () => {

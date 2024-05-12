@@ -1,10 +1,10 @@
-import React, { FormEvent, useState } from "react";
+import{ FormEvent, useState } from "react";
 import {  useTodos } from "../context/todoContext";
 import ListTodos from "./ListTodos";
 
 const AddToDo = () => {
   const [todo, setTodo] = useState("");
-  const {todos,handleAddTodo} = useTodos()
+  const {handleAddTodo} = useTodos()
   const handleForm = (e: FormEvent<HTMLElement>) => {
     e.preventDefault();
     handleAddTodo(todo);
